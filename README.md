@@ -23,8 +23,8 @@ Apply custom queries (Pixel/Center cross match, Range and KNN) on top of the dat
 
 ## Topics worked on - 
 1. JTS (a Java library for creating and manipulating 2D vector geometry.) replacement for 3D
-   1. Main PR 
-      - https://github.com/astrolabsoftware/spark3D/pull/22
+   1. Main PR  
+      https://github.com/astrolabsoftware/spark3D/pull/22
 
    2. Bug Fix
       - https://github.com/astrolabsoftware/spark3D/pull/67
