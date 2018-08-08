@@ -2,11 +2,24 @@
 
 Spark3D is as an open-source Spark library to process large scala 3D data-sets from, Astrophysics, High Energy Physics, Meteorology, etc. The library works on top of the latest Spark versions (2.0+), has user friendly APIs (in Scala and Python (ongoing)), works on top of HDFS and supports all major file formats (CSV, Parquet, JSON, Avro, etc.) including popular scientific file formats such as FITS.
 
-You can use the [editor on GitHub](https://github.com/mayurdb/mayurdb.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Approach
 
 ![Workflow](/assets/img.png)
+
+Step - 1: 
+Load the data from the source into a raw RDD and then subsquently mapped to a 3D RDD (Point3DRDD or SphereRDD).
+
+Step - 2:
+Partition the 3D space (Octree/Onion partitioning) to map points which are in proximity to one another to a uniquely identifiable region.
+
+Step - 3:
+Repartition the RDD with custom Octree or Onion partitioner (based on which partitioning scheme was used in Step-2) to store data points inside the region identified in Step-2 in a unique partition. 
+
+Step - 4:
+Index the RDD to reduce the latency of elements access. (optional)
+
+Step - 5:
+Apply custom queries (Pixel/Center cross match, Range and KNN) on top of the data.
 
 ### Markdown
 
