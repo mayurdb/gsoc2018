@@ -24,45 +24,46 @@ Apply custom queries (Pixel/Center cross match, Range and KNN) on top of the dat
 ## Topics worked on - 
 1. JTS (a Java library for creating and manipulating 2D vector geometry.) replacement for 3D
    1. Main PR 
-      https://github.com/astrolabsoftware/spark3D/pull/22
+      - https://github.com/astrolabsoftware/spark3D/pull/22
 
    2. Bug Fix
-      https://github.com/astrolabsoftware/spark3D/pull/67
+      - https://github.com/astrolabsoftware/spark3D/pull/67
 
 2. Octree
    1. Octree implementation
-      https://github.com/astrolabsoftware/spark3D/pull/30
+      - https://github.com/astrolabsoftware/spark3D/pull/30
     
    2. Octree partitioner
-      https://github.com/astrolabsoftware/spark3D/pull/36
+      - https://github.com/astrolabsoftware/spark3D/pull/36
    
    3. Bug fixes
      1. Sample size related
-        https://github.com/astrolabsoftware/spark3D/pull/56
-        https://github.com/astrolabsoftware/spark3D/pull/71
+        - https://github.com/astrolabsoftware/spark3D/pull/56
+        - https://github.com/astrolabsoftware/spark3D/pull/71
+
      2. Missing elements after repartitioning
-        https://github.com/astrolabsoftware/spark3D/pull/76
+        - https://github.com/astrolabsoftware/spark3D/pull/76
     
 3. KNN
    1. KNN Naive
-      https://github.com/astrolabsoftware/spark3D/pull/59
+      - https://github.com/astrolabsoftware/spark3D/pull/59
     
    2. KNN efficient
-      https://github.com/astrolabsoftware/spark3D/pull/60
-      https://github.com/astrolabsoftware/spark3D/pull/62
+      - https://github.com/astrolabsoftware/spark3D/pull/60
+      - https://github.com/astrolabsoftware/spark3D/pull/62
     
    3. KNN Unique
-      https://github.com/astrolabsoftware/spark3D/pull/68/files
+      - https://github.com/astrolabsoftware/spark3D/pull/68/files
   
    4. KNN Ordering bug fix
-      https://github.com/astrolabsoftware/spark3D/pull/80
+      - https://github.com/astrolabsoftware/spark3D/pull/80
 
 4. SphereRDD
    1. Main PR
-      https://github.com/astrolabsoftware/spark3D/pull/38
+      - https://github.com/astrolabsoftware/spark3D/pull/38
 
 5. Other minor fix
-   https://github.com/astrolabsoftware/spark3D/pull/27
+   - https://github.com/astrolabsoftware/spark3D/pull/27
    
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
