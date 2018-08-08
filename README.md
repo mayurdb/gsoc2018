@@ -21,7 +21,49 @@ Index the RDD to reduce the latency of elements access. (optional)
 Step - 5:
 Apply custom queries (Pixel/Center cross match, Range and KNN) on top of the data.
 
-### Markdown
+## Topics worked on - 
+1. JTS (a Java library for creating and manipulating 2D vector geometry.) replacement for 3D
+   A) Main PR 
+      https://github.com/astrolabsoftware/spark3D/pull/22
+
+   B) Bug Fix
+      https://github.com/astrolabsoftware/spark3D/pull/67
+
+2. Octree
+   A) Octree implementation
+      https://github.com/astrolabsoftware/spark3D/pull/30
+    
+   B) Octree partitioner
+      https://github.com/astrolabsoftware/spark3D/pull/36
+   
+   C) Bug fixes
+     a) Sample size related
+        https://github.com/astrolabsoftware/spark3D/pull/56
+        https://github.com/astrolabsoftware/spark3D/pull/71
+     b) Missing elements after repartitioning
+        https://github.com/astrolabsoftware/spark3D/pull/76
+    
+3. KNN
+   A) KNN Naive
+      https://github.com/astrolabsoftware/spark3D/pull/59
+    
+   B) KNN efficient
+      https://github.com/astrolabsoftware/spark3D/pull/60
+      https://github.com/astrolabsoftware/spark3D/pull/62
+    
+   C) KNN Unique
+      https://github.com/astrolabsoftware/spark3D/pull/68/files
+  
+   D) KNN Ordering bug fix
+      https://github.com/astrolabsoftware/spark3D/pull/80
+
+4. SphereRDD
+   A) Main PR
+      https://github.com/astrolabsoftware/spark3D/pull/38
+
+5. Other minor fix
+   https://github.com/astrolabsoftware/spark3D/pull/27
+   
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
