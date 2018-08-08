@@ -1,7 +1,6 @@
 ## Spark3D
 
-Spark3D is as an open-source Spark library to process large scala 3D data-sets from, Astrophysics, High Energy Physics, Meteorology, etc. The library works on top of the latest Spark versions (2.0+), has user friendly APIs (in Scala and Python (ongoing)), works on top of HDFS and supports all major file formats (CSV, Parquet, JSON, Avro, etc.) including popular
-scientific file formats such as FITS.
+Spark3D is as an open-source Spark library to process large scala 3D data-sets from, Astrophysics, High Energy Physics, Meteorology, etc. The library works on top of the latest Spark versions (2.0+), has user friendly APIs (in Scala and Python (ongoing)), works on top of HDFS and supports all major file formats (CSV, Parquet, JSON, Avro, etc.) including popular scientific file formats such as FITS.
 
 You can use the [editor on GitHub](https://github.com/mayurdb/mayurdb.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
