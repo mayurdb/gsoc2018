@@ -1,6 +1,6 @@
 ## Spark3D
 
-Spark3D is as an open-source Spark library to process large scala 3D data-sets from, Astrophysics, High Energy Physics, Meteorology, etc. The library works on top of the latest Spark versions (2.0+), has user friendly APIs (in Scala and Python (ongoing)), works on top of HDFS and supports all major file formats (CSV, Parquet, JSON, Avro, etc.) including popular scientific file formats such as FITS.
+spark3D is as an open-source Apache Spark extension to process large scale 3D data-sets from, Astrophysics, High Energy Physics, Meteorology, etc. The library works on top of the latest Spark versions (2.0+), has user friendly APIs (in Scala and Python), works on top of HDFS and supports all major file formats (CSV, Parquet, JSON, Avro, etc.) including popular scientific file formats such as FITS.
 
 ## Approach
 
@@ -74,7 +74,7 @@ Apply custom queries (Pixel/Center cross match, Range and KNN) on top of the dat
 2. RTree partitioning implementation (work in progress)
    https://github.com/astrolabsoftware/spark3D/pull/87
 
-3. Spark3D suppport on S3
+3. spark-fits suppport on S3
 
 ## Relevant links -
 1. Spark3D public repo
