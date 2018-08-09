@@ -72,13 +72,13 @@ Apply custom queries (Pixel/Center cross match, Range and KNN) on top of the dat
 1. Build index to speed-up spatial queries
    
 2. RTree partitioning implementation (work in progress)
-   https://github.com/astrolabsoftware/spark3D/pull/87
+   [https://github.com/astrolabsoftware/spark3D/pull/87](https://github.com/astrolabsoftware/spark3D/pull/87)
 
 3. spark-fits suppport on S3
 
 ## Relevant links -
 1. Spark3D public repo
-   https://github.com/astrolabsoftware/spark3D/issues
+   [https://github.com/astrolabsoftware/spark3D/issues](https://github.com/astrolabsoftware/spark3D/issues)
 
 2. Spark3D website - 
-   https://astrolabsoftware.github.io/
+   [https://astrolabsoftware.github.io/](https://astrolabsoftware.github.io/)
