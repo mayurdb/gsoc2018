@@ -1,13 +1,13 @@
-## Spark3D
+## spark3D
 
-spark3D is as an open-source Apache Spark extension to process large-scale 3D data-sets from, Astrophysics, High Energy Physics, Meteorology, etc. The library works on top of the latest Spark versions (2.0+), has user-friendly APIs (in Scala and Python), works on top of HDFS and supports all major file formats (CSV, Parquet, JSON, Avro, etc.) including popular scientific file formats such as FITSa.
+spark3D is as an open-source Apache Spark extension to process large-scale 3D data-sets from, Astrophysics, High Energy Physics, Meteorology, etc. The library works on top of the latest Spark versions (2.0+), has user-friendly APIs (in Scala and Python), works on top of any DFS (Distributed File System) and supports all major file formats (CSV, Parquet, JSON, Avro, etc.) including popular scientific file formats such as FITS.
 
 ## Approach
 
 ![Workflow](/assets/img.png)
 
 **Step - 1:** 
-Load the data from the source into a raw RDD and then subsequently mapped to a 3D RDD (Point3DRDD or SphereRDD).
+Load the data from the source into a raw RDD and then subsequently map to a 3D RDD (Point3DRDD or SphereRDD).
 
 **Step - 2:**
 Partition the 3D space (Octree/Onion partitioning) to map points which are in proximity to one another to a uniquely identifiable region. Once such regions are identified, map all data points inside one region to a unique RDD partition. 
@@ -29,7 +29,7 @@ Apply custom queries (Pixel/Center crossmatch, Range and KNN) on top of the data
       1. [https://github.com/astrolabsoftware/spark3D/pull/67](https://github.com/astrolabsoftware/spark3D/pull/67)
 
 2. **Octree**  
-   Octree is a 3D extension of quadtree wherein at each stage cube (instead of square in quadtree case) is split into 8 subcubes. As all the sub node cubes are contained within the parent node and each level contains increasing the level of resolution of details as we move away from the root level, so a search for the data point can be done very easily by moving down the tree along the subcube which contains some information about a particular point.
+   Octree is a 3D extension of Quadtree wherein at each stage cube (instead of square in quadtree case) is split into 8 subcubes. As all the sub node cubes are contained within the parent node and each level contains increasing the level of resolution of details as we move away from the root level, so a search for the data point can be done very easily by moving down the tree along the subcube which contains some information about a particular point.
 
    1. Octree base data structure implementation -
       1. [https://github.com/astrolabsoftware/spark3D/pull/30](https://github.com/astrolabsoftware/spark3D/pull/30)
@@ -37,7 +37,7 @@ Apply custom queries (Pixel/Center crossmatch, Range and KNN) on top of the data
    2. Octree partitioner to partition the data across the leaves of the Octree -
       1. [https://github.com/astrolabsoftware/spark3D/pull/36](https://github.com/astrolabsoftware/spark3D/pull/36)
    
-   3. Avoiding OOM(Out of memory issue) issue when the data size is very large and collecting even a fraction of the data as a sample causes the driver process to run out of memory - 
+   3. Avoiding OOM(Out of memory) issue when the data size is very large and collecting even a fraction of the data as a sample causes the driver process to run out of memory - 
       1. [https://github.com/astrolabsoftware/spark3D/pull/56](https://github.com/astrolabsoftware/spark3D/pull/56)
       2. [https://github.com/astrolabsoftware/spark3D/pull/71](https://github.com/astrolabsoftware/spark3D/pull/71)
       
