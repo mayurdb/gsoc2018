@@ -55,7 +55,7 @@ Apply custom queries (Pixel/Center crossmatch, Range and KNN) on top of the data
       1. [https://github.com/astrolabsoftware/spark3D/pull/62](https://github.com/astrolabsoftware/spark3D/pull/62)
     
    3. **KNN Unique** - Implementation of KNN which only returns unique elements. This is useful especially when one element can belong to multiple partitions (SphereRDD + OctreePartitioning). 
-      1. [https://github.com/astrolabsoftware/spark3D/pull/68/files](https://github.com/astrolabsoftware/spark3D/pull/68/files)
+      1. [https://github.com/astrolabsoftware/spark3D/pull/68](https://github.com/astrolabsoftware/spark3D/pull/68)
   
    4. **KNN Ordering bug fix** - 
       Fixed the order in which the KNN were picked within the partitions.
