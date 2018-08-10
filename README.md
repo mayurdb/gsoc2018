@@ -80,8 +80,8 @@ Apply custom queries (Pixel/Center crossmatch, Range and KNN) on top of the data
 3. spark-fits support on S3
 
 ## Relevant links -
-1. **Spark3D public repo**  
+1. **spark3D public repo**  
    [https://github.com/astrolabsoftware/spark3D/issues](https://github.com/astrolabsoftware/spark3D/issues)
 
-2. **Spark3D website**   
+2. **spark3D website**   
    [https://astrolabsoftware.github.io/](https://astrolabsoftware.github.io/)
